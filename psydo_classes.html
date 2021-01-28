@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Sample title</title>
+	<link rel="icon" href="profile.svg"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<style type="text/css">
+		body{
+			background: #e77dac;
+		}
+	.parent{
+		align-items:center;
+		display: flex;
+		flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+	}
+	.child{
+		background: #fff;
+		border:1px solid rgb(3,123,145);
+		padding:1%;
+		margin:1%;
+		width:20%;
+		justify-content: space-between;
+	}
+	@media only screen and (min-width:320px) and (max-width: 480px){
+		.child{
+			width:40%;
+			font-size: 25px;
+			background: yellow;
+
+		}
+
+	}
+	@media only screen and (min-width: :481px) and (max-width: :767px)
+	{
+		.child{
+			width: 40%;
+			font-weight: 700;
+			border-radius: 10px;
+			border:3px solid #000;
+			box-shadow:3px 3px 3px rgb(170,46,46);
+		}
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 1024px)
+	{
+		.child{
+			width: 25%;
+			box-shadow:0px 8px 8px -8px #000;
+
+		}
+	}
+	</style>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<section class="parent">
+		<article class="child">Malaysia</article>
+		<article class="child">singapore</article>
+		<article class="child">gangtok</article>
+		<article class="child">peru</article>
+	</section>
+</body>
+
+</html>
